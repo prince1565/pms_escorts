@@ -1,0 +1,124 @@
+
+/* for inputcomponenet */
+
+
+.voice-input-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.voice-input-button svg {
+  width: 24px;
+  height: 24px;
+  fill: #21B4B7;
+}
+
+/* while voice Search in on  */
+.voice-input-button-on {
+  background-color:transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.voice-input-button-on svg {
+  width: 24px;
+  height: 24px;
+  
+}
+
+.voice-input-button:hover svg {
+  fill: #0A798B;
+}
+
+.voice-input-button {
+  background-color: transparent;
+}
+
+.voice-input-button-on {
+  background-color: red;
+}
+
+/* for chathistory */
+.msghistory {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f0f0f0;
+}
+
+.msghistory::-webkit-scrollbar {
+  width: 8px;
+}
+
+.msghistory::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.msghistory::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+
+/* for dropdown */
+.form-group {
+  position: relative;
+}
+
+.dropdown-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  color: #fff;
+}
+.language select option :hover{
+  background-color: #0A798B important;
+}
+
+
+/* for inpit component  */
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.chat-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.form-control {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+
+/* inputcomponent css */
+/* Ensure elements stay in the same row in phone view */
+@media (max-width: 600px) {
+  .chat-form {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form-control {
+    flex-grow: 1;
+    margin-right: 5px;
+  }
+
+  .voice-input-button {
+    margin-right: 5px;
+  }
+}
+
+
