@@ -144,7 +144,7 @@
   }
 }
 
-/* for tablet view */
+/* for tablet view
 @media (min-width: 577px ) and (max-width:850px)  {
   .logo{
     margin-top: 150px;
@@ -155,5 +155,5 @@
   .logo{
     margin-top: 100px;
   }
- 
 }
+  */

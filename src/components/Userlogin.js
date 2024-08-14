@@ -126,7 +126,7 @@ const Login = () => {
                   </button>
                 </div>
                 {showResend ? (
-                  <div className="text-center">
+                  <div className="text-end">
                     <button
                       className="btn btn-link"
                       onClick={handleResendOtp}
@@ -135,8 +135,8 @@ const Login = () => {
                     </button>
                   </div>
                 ) : (
-                  <div className="text-center">
-                    <small className="text-muted">Resend OTP in: {timer} seconds</small>
+                  <div className="text-end mt-1">
+                    <p className="text-muted"><b>Resend OTP in: {timer}</b></p>
                   </div>
                 )}
               </>
@@ -149,4 +149,5 @@ const Login = () => {
 };
 
 export default Login;
+
 
