@@ -10,6 +10,7 @@ const ChatHistory = ({ messages }) => {
     
     const retrievedArray = getArrayFromLocalStorage('chathistory');
     setchathistory(retrievedArray);
+    
   }, []);
 
   useEffect(() => {

@@ -28,7 +28,7 @@ const Chat = () => {
       text: "Bot message comes here"
     };
 
-    setMessages((prevMessages) => [...prevMessages, userMessage, guidedQuestions]);
+    setMessages((prevMessages) => [...prevMessages, userMessage, botMessage]);
   };
 
   const handleClear = () => {
