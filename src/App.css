@@ -28,14 +28,7 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 
 
 /* styles.css */
@@ -52,108 +45,213 @@
 /* for adminlogin page  */
 
 .bg-teal {
-  background-color: #38B2AC; /* Teal color */
+  background-color: #a8c1c0 !important; /* Teal color */
 }
 
 .text-teal {
-  color: #38B2AC; /* Teal color */
+  color: #38B2AC !important; /* Teal color */
 }
 
 .btn-teal {
-  background-color: #38B2AC; /* Teal color */
-  color: white;
+  background-color: #38B2AC !important; /* Teal color */
+  color: white !important;
 }
 
 .btn-teal:hover {
-  background-color: #2C7A7B; /* Darker teal on hover */
+  background-color: #2C7A7B !important; /* Darker teal on hover */
 }
 
 .bot-image {
-  width: 80%;
+  width: 80% !important;
 }
 
-@media (max-width: 768px) {
-  .bot-image {
-    width: 60%;
+/* sidebar */
+.menuoption:hover{
+  color: white !important;
+}
+
+
+
+/* for compomnent/projecttimechat */
+/* In your CSS file (e.g., App.css) */
+.chart-container {
+  position: relative;
+  height: 100%; /* Adjust to your needs */
+}
+
+.card-body {
+  position: relative;
+  height: 400px; /* Or any other height you need */
+  width: 100%;
+}
+
+
+/* for component/chart.js */
+/* In your CSS file (e.g., App.css) */
+.chart-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  padding: 20px; /* Optional: Adds padding around the chart */
+}
+
+canvas {
+  width: 100% !important; /* Ensures canvas takes full width */
+  height: 100% !important; /* Ensures canvas takes full height */
+}
+
+
+/* for yTask.js */
+/* Add your custom styles here */
+/* Add your custom styles here */
+.todo-list-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+small {
+  display: block;
+  color: #6c757d;
+  margin-top: 5px;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+
+/* directchat.js */
+.direct-chat {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.direct-chat-header {
+  background-color: #3c8dbc;
+  color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.direct-chat-messages {
+  flex-grow: 1;
+  padding: 10px;
+  background: #f9f9f9;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.direct-chat-msg {
+  margin-bottom: 10px;
+}
+
+.direct-chat-info {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.direct-chat-text {
+  background: #d2d6de;
+  border-radius: 3px;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.direct-chat-footer {
+  display: flex;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  background: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.direct-chat-footer input {
+  flex-grow: 1;
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.direct-chat-footer button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #3c8dbc;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+.direct-chat {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden; /* Prevent the parent from handling overflow */
+}
+
+.direct-chat-messages {
+  flex-grow: 1; /* Take up remaining space */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.direct-chat-footer {
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+}
+
+
+/* pages/report.js */
+
+
+
+@media only screen and (max-width: 1100px) {
+  .table-wrapper{
+    overflow-x: scroll;
+    width: 720px;
+    
+  }
+}
+@media only screen and (max-width: 1550px) and (min-width: 1301px)  {
+  .table-wrapper{
+    overflow-x: scroll;
+    width: 1230px;
+   
   }
 }
 
-@media (max-width: 576px) {
-  .logo{
-    margin-top: 380px;
-    margin-right: 35px;
-  }
-  .kubotalogo{
-    margin-left: -30px;
-  }
-  .name{
-    margin-top: 15px;
-  }
-}
-@media (max-height: 630px) and (max-width: 576px) {
-  .logo{
-    margin-top: 280px;
-    margin-right: 35px;
-  }
-}
-@media only screen and (min-height: 635px ) and (max-height: 670px) and (max-width: 576px)  {
-  .logo{
-    margin-top: 330px;
-    margin-right: 35px;
-  }
-  .kubotalogo{
-    margin-left: -40px;
-  }
-  .escorts{
-    margin-right: 40px;
-  }
-  .name{
-    margin-top: 15px;
+@media only screen and (max-width: 1300px) and (min-width: 1101px)  {
+  .table-wrapper{
+    overflow-x: scroll;
+    width: 900px;
+   
   }
 }
 
-@media only screen and (min-height: 730px ) and (max-height: 773px) and (max-width: 576px)  {
-  .logo{
-    margin-top: 390px;
-    margin-right: 35px;
-  }
-  .kubotalogo{
-    margin-left: -40px;
-  }
-  .escorts{
-    margin-right: 40px;
-  }
-  .name{
-    margin-top: 15px;
-  }
-}
 
-@media only screen and (min-height: 810px ) and (max-width: 576px)   {
-  .logo{
-    margin-top: 450px;
-    margin-right: 35px;
-  }
-  .kubotalogo{
-    margin-left: -40px;
-  }
-  .escorts{
-    margin-right: 40px;
-  }
-  .name{
-    margin-top: 15px;
-  }
-}
 
-/* for tablet view
-@media (min-width: 577px ) and (max-width:850px)  {
-  .logo{
-    margin-top: 150px;
-  }
- 
-}
-@media (min-width: 900px ) and (max-width:1200px)  {
-  .logo{
-    margin-top: 100px;
-  }
-}
-  */

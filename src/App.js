@@ -1,35 +1,33 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { Flex, Box, useDisclosure, useBreakpointValue } from '@chakra-ui/react';
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
-import Breadcrumbs from './components/Breadcrumbs';
-import Dashboard from './components/Dashboard';
-import FileUpload from './components/FileUpload';
-import FileHistory from './components/FileHistory';
-import Login from './components/Login';
-import PrivateRoute from './components/PrivateRoute';
+import Header from './Pages/Header';
+import Sidebar from './Pages/Sidebar';
+import Breadcrumbs from './Pages/Breadcrumbs';
+import Dashboard from './Pages/Dashboard';
+import FileUpload from './Pages/FileUpload';
+import Report from './Pages/Report';
+import Login from './Pages/Login';
+import PrivateRoute from './Pages/PrivateRoute';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
-import Chat from './userZone/pages/Chat';
-import Userlogin from './components/Userlogin';
+
 
 const AppContent = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const sidebarVariant = useBreakpointValue({ base: 'drawer', md: 'sidebar' });
+  // const sidebarVariant = useBreakpointValue({ base: 'drawer', md: 'sidebar' });
   const { isAuthenticated } = useAuth();
   const location = useLocation();
 
-  // Check if the current path is for login pages or chat
-  const isChatPage = location.pathname === '/chat';
-  const isLoginPage = location.pathname === '/admin';
-  const isUserLoginPage = location.pathname === '/login';
 
-  const showSidebar = isAuthenticated && !isChatPage && !isLoginPage && !isUserLoginPage;
-  const showHeader = isAuthenticated && !isChatPage && !isLoginPage && !isUserLoginPage;
-  const showBreadcrumbs = isAuthenticated && !isChatPage && !isLoginPage && !isUserLoginPage;
+  const isLoginPage = location.pathname === '/';
+
+
+  const showSidebar = isAuthenticated && !isLoginPage ;
+  const showHeader = isAuthenticated  && !isLoginPage;
+  const showBreadcrumbs = isAuthenticated && !isLoginPage ;
 
   return (
-    <Flex minH="100vh">
+    <Flex minH="100vh" className='bg-light'>
       {showSidebar && (
         <Sidebar isOpen={isOpen} onClose={onClose} />
       )}
@@ -38,11 +36,10 @@ const AppContent = () => {
         <Box flex="1">
           {showBreadcrumbs && <Breadcrumbs />}
           <Routes>
-            <Route path="/admin" element={<Login />} />
-            <Route path="/login" element={<Userlogin />} />
-            <Route path="/chat" element={<Chat />} />
+            <Route path="/" element={<Login/>} />
+            
             <Route
-              path="/"
+              path="/dashboard"
               element={
                 <PrivateRoute>
                   <Dashboard />
@@ -58,10 +55,10 @@ const AppContent = () => {
               }
             />
             <Route
-              path="/filehistory"
+              path="/report"
               element={
                 <PrivateRoute>
-                  <FileHistory />
+                  <Report />
                 </PrivateRoute>
               }
             />

@@ -9,7 +9,7 @@ const Breadcrumbs = () => {
   return (
     <Breadcrumb ms={4} mt={4}>
       <BreadcrumbItem>
-        <BreadcrumbLink as={RouterLink} to="/">
+        <BreadcrumbLink as={RouterLink} to="/dashboard">
           Home
         </BreadcrumbLink>
       </BreadcrumbItem>

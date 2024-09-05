@@ -7,7 +7,7 @@ const Header = ({ onOpenSidebar }) => {
   const navigate=useNavigate();
 
   const handleLogout=()=>{
-    navigate('/admin');
+    navigate('/');
   }
   return (
     <Flex as="header" justify="space-between" align="center" p="4" bg="white" boxShadow="md">

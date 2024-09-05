@@ -1,0 +1,34 @@
+{
+    "columns": [
+      { "Header": "ID", "id": "id" },
+      { "Header": "Name", "id": "name" },
+      { "Header": "Email", "id": "email" },
+      { "Header": "Date Joined", "id": "dateJoined" },
+      { "Header": "Role", "id": "role" },
+      { "Header": "Phone", "id": "phone" },
+      { "Header": "Address", "id": "address" },
+      { "Header": "City", "id": "city" },
+      { "Header": "State", "id": "state" },
+      { "Header": "Zip Code", "id": "zipCode" },
+      { "Header": "Country", "id": "country" },
+      { "Header": "Department", "id": "department" },
+      { "Header": "Position", "id": "position" },
+      { "Header": "Salary", "id": "salary" },
+      { "Header": "Manager", "id": "manager" },
+      { "Header": "Hire Date", "id": "hireDate" },
+      { "Header": "Last Promotion", "id": "lastPromotion" },
+      { "Header": "Performance Rating", "id": "performanceRating" },
+      { "Header": "Employment Type", "id": "employmentType" },
+      {"Header":"Notes" , "id":"notes"}
+      
+      
+    ],
+    "data": [
+      { "id": 1, "name": "John Doe", "email": "john.doe@example.com", "dateJoined": "2024-01-15", "role": "Admin", "phone": "123-456-7890", "address": "123 Elm St", "city": "Springfield", "state": "IL", "zipCode": "62701", "country": "USA", "department": "IT", "position": "Senior Developer", "salary": "$90,000", "manager": "Jane Smith", "hireDate": "2022-01-15", "lastPromotion": "2023-01-01", "performanceRating": "Excellent", "employmentType": "Full-time", "notes": "Works remotely"},
+      { "id": 2, "name": "Jane Smith", "email": "jane.smith@example.com", "dateJoined": "2024-02-10", "role": "Manager", "phone": "234-567-8901", "address": "456 Oak St", "city": "Springfield", "state": "IL", "zipCode": "62702", "country": "USA", "department": "HR", "position": "HR Manager", "salary": "$85,000", "manager": "Emily Davis", "hireDate": "2021-06-10", "lastPromotion": "2022-06-15", "performanceRating": "Good", "employmentType": "Full-time", "notes": "Handles employee relations" },
+      { "id": 3, "name": "Michael Johnson", "email": "michael.johnson@example.com", "dateJoined": "2024-03-05", "role": "Viewer", "phone": "345-678-9012", "address": "789 Pine St", "city": "Springfield", "state": "IL", "zipCode": "62703", "country": "USA", "department": "Finance", "position": "Financial Analyst", "salary": "$70,000", "manager": "William Brown", "hireDate": "2023-03-05", "lastPromotion": "N/A", "performanceRating": "Average", "employmentType": "Part-time", "notes": "Requires additional training" },
+      { "id": 4, "name": "Emily Davis", "email": "emily.davis@example.com", "dateJoined": "2024-04-20", "role": "Admin", "phone": "456-789-0123", "address": "101 Maple St", "city": "Springfield", "state": "IL", "zipCode": "62704", "country": "USA", "department": "IT", "position": "System Admin", "salary": "$95,000", "manager": "Jane Smith", "hireDate": "2020-04-20", "lastPromotion": "2022-04-20", "performanceRating": "Excellent", "employmentType": "Full-time", "notes": "Lead tech support" },
+      { "id": 5, "name": "William Brown", "email": "william.brown@example.com", "dateJoined": "2024-05-30", "role": "Manager", "phone": "567-890-1234", "address": "202 Birch St", "city": "Springfield", "state": "IL", "zipCode": "62705", "country": "USA", "department": "Sales", "position": "Sales Manager", "salary": "$80,000", "manager": "Emily Davis", "hireDate": "2022-05-30", "lastPromotion": "2023-05-30", "performanceRating": "Good", "employmentType": "Full-time", "notes": "Manages regional sales team" }
+    ]
+  }
+  
