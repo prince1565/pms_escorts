@@ -240,7 +240,7 @@ small {
 @media only screen and (max-width: 1550px) and (min-width: 1301px)  {
   .table-wrapper{
     overflow-x: scroll;
-    width: 1230px;
+    width: 1050px;
    
   }
 }
